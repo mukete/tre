@@ -1,0 +1,26 @@
+<footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script>
+		$('.menu-button').click(function(){
+			$('#slideout').toggleClass('on');
+		});
+
+		$(function() {
+    //caches a jQuery object containing the header element
+    var header = $("#header");
+    $(window).scroll(function() {
+    	var scroll = $(window).scrollTop();
+
+    	if (scroll >= 10) {
+    		header.removeClass("transparent").addClass("black");
+    	} else {
+    		header.removeClass("black").addClass('transparent');
+    	}
+    });
+});
+		
+</script>
+
+</footer>
